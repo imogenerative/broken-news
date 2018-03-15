@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>broken news</title>
+        <meta name="description" content="broken news">
+        <meta name="author" content="Imogen Fulton">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+        <script src="{{ url_for('static', filename='processing.js') }}"></script>
+    </head>
+
+    <body>
+        <canvas data-processing-sources="{{ url_for('static', filename='random1.pde') }}"></canvas>
+    </body>
+</html>
